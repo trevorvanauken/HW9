@@ -9,19 +9,18 @@
 <h1>Homework 9: GEE Analysis</h1>
 <h2>Trevor VanAuken</h2>
 <h2>GEE Code:</h2>
-<h3>
-    var Vis = {
-    min: 0,
-    max: 2000,
-  };
-  Map.setCenter(-83.235, 42.4073, 10);
-  
-  var clipped_raster = MichRivers.distance().clip(MetropolitanArea);
-  var colorp = ['#0571b0','#92c5de','#f7f7f7','#f4a582','#ca0020'];
-  //['#ca0020','#f4a582','#f7f7f7','#92c5de','#0571b0']
-  
-  Map.addLayer(MichRivers, Vis, 'Michigan Rivers');
-  Map.addLayer(clipped_raster, { min: 0,max: 4000, palette: colorp}, 'Clip' );
+<h3>    var Vis = {<h3>
+<h3>    min: 0,</h3>
+<h3>    max: 2000,<h3>
+<h3>};<h3>
+<h3>Map.setCenter(-83.235, 42.4073, 10);</h3>
+<h3> </h3>
+<h3>var clipped_raster = MichRivers.distance().clip(MetropolitanArea);</h3>
+<h3>var colorp = ['#0571b0','#92c5de','#f7f7f7','#f4a582','#ca0020'];</h3>
+<h3>//['#ca0020','#f4a582','#f7f7f7','#92c5de','#0571b0']</h3>
+<h3> </h3>
+<h3>Map.addLayer(MichRivers, Vis, 'Michigan Rivers');</h3>
+<h3>Map.addLayer(clipped_raster, { min: 0,max: 4000, palette: colorp}, 'Clip' );</h3>
   
 </h3>
 <!-- Your map goes here -->
